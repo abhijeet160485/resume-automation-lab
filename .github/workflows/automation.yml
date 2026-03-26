@@ -8,9 +8,17 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ensures Node.js 24 is used
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4   # updated to v4 (Node.js 24 compatible)
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4 # updated to v4
+        with:
+          node-version: '24'
 
       - name: Setup environment
         run: sudo apt-get install -y pandoc texlive-xetex
@@ -22,7 +30,7 @@ jobs:
         run: pandoc src/resume.md -o docs/index.html
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4   # updated to v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
