@@ -33,7 +33,17 @@ jobs:
         run: pandoc src/resume.md -o docs/index.html
 
       - name: List docs folder (debug)
-        run: ls -l docs   # shows contents before deploy
+        run: ls -l docs
+
+      - name: Update README with last updated date
+        run: |
+          DATE=$(date +"%B %d, %Y")
+          sed -i "s/^_Last updated:.*$/_Last updated: $DATE_/" README.md
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update README with last updated date" || echo "No changes to commit"
+          git push
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
