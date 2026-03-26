@@ -9,14 +9,14 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ensures Node.js 24 is used
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # force Node.js 24 now
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4   # updated to v4 (Node.js 24 compatible)
+        uses: actions/checkout@v4   # latest version, Node.js 24 compatible
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4 # updated to v4
+        uses: actions/setup-node@v4 # latest version
         with:
           node-version: '24'
 
@@ -30,7 +30,7 @@ jobs:
         run: pandoc src/resume.md -o docs/index.html
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4   # updated to v4
+        uses: peaceiris/actions-gh-pages@v4   # latest version
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
