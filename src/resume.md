@@ -14,3 +14,5 @@ Over 15 years of experience leading high-performing teams, driving automation, C
 - Automated CI/CD pipelines for enterprise apps
 - Cloud-native infrastructure migration
 - AI-assisted RCA & incident documentation
+- Resume Automation Lab (GitHub Actions + Pandoc)
+- Cloud Cost Optimizer – Automated AWS/GCP spend monitoring and scaling
