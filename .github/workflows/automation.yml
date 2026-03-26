@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4   # latest version
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -24,13 +24,16 @@ jobs:
         run: sudo apt-get install -y pandoc texlive-xetex
 
       - name: Create docs folder
-        run: mkdir -p docs   # ensures docs folder exists
+        run: mkdir -p docs
 
       - name: Generate PDF
         run: pandoc src/resume.md -o docs/resume.pdf
 
       - name: Generate HTML
         run: pandoc src/resume.md -o docs/index.html
+
+      - name: List docs folder (debug)
+        run: ls -l docs   # shows contents before deploy
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
