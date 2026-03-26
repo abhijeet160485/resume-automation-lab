@@ -1,0 +1,28 @@
+name: Resume Automation Lab
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup environment
+        run: sudo apt-get install -y pandoc texlive-xetex
+
+      - name: Generate PDF
+        run: pandoc src/resume.md -o docs/resume.pdf
+
+      - name: Generate HTML
+        run: pandoc src/resume.md -o docs/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
