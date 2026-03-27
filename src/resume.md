@@ -79,4 +79,4 @@ D.U, New Delhi
 
 ## Availability & Preferences
 
-📍 Based in Greater Noida • Open to: Delhi/NCR (preferred), Hybrid, or Remote across India • Notice Period: Open to discussion
+Based in Greater Noida • Open to: Delhi/NCR (preferred), Hybrid, or Remote across India • Notice Period: Open to discussion
