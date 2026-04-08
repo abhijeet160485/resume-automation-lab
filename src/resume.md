@@ -9,7 +9,7 @@ Greater Noida, Delhi/NCR • +91 9321191745 • abhijeet.k.srivastava@gmail.com 
 
 ## Professional Summary
 
-Results-driven Infrastructure & Cloud Operations Leader with 15+ years of experience building and scaling mission-critical platforms in global financial services. Proven track record leading large distributed teams, executing multi-cloud migrations (AWS & Azure), and implementing SRE principles to drive availability, reliability, and automation. Deep expertise across the full DevOps toolchain — Terraform, Ansible, AWX, CI/CD pipelines, Kubernetes-orchestrated workloads, and observability stacks (Grafana, Splunk, AppDynamics). Consistently recognized for reducing MTTR, eliminating toil through automation, and aligning infrastructure strategy with business objectives across Engineering, Risk, and Compliance stakeholders.
+Results-driven Infrastructure & Cloud Operations Leader with 15+ years of experience building and scaling mission-critical platforms in global financial services. Proven track record leading large distributed teams, executing multi-cloud migrations (AWS & Azure), and implementing SRE principles to drive availability, reliability, and automation. Deep expertise across the full DevOps toolchain — Docker,Kubernetes,Terraform, Ansible, AWX, CI/CD pipelines, Kubernetes-orchestrated workloads, and observability stacks (Grafana, Splunk, AppDynamics). Consistently recognized for reducing MTTR, eliminating toil through automation, and aligning infrastructure strategy with business objectives across Engineering, Risk, and Compliance stakeholders.
 
 ---
 
@@ -17,7 +17,7 @@ Results-driven Infrastructure & Cloud Operations Leader with 15+ years of experi
 
 | Area | Skills |
 |---|---|
-| **Cloud & Infra** | AWS (EC2, S3, VPC, IAM, CloudWatch) • Azure (VMs, AKS, Monitor, DevOps) • Multi-cloud Strategy • Cloud Migration |
+| **Cloud & Infra** | AWS (EC2, S3, VPC, IAM, CloudWatch) • Azure (VMs, AKS, Monitor, DevOps) • Multi-cloud Strategy • Cloud Migration • Docker • Kubernetes|
 | **DevOps & SRE** | Terraform • Ansible • AWX • CI/CD Pipelines • GitOps • SLO/SLI/Error Budgets • Chaos Engineering • Toil Reduction |
 | **Observability** | Grafana • Splunk • AppDynamics • Alerting & Dashboarding • Log Analysis • AIOps |
 | **Operations** | Incident / Problem / Change Mgmt (ITIL) • DR & BCP • Capacity Planning • Production Support • Release Mgmt |
@@ -29,17 +29,17 @@ Results-driven Infrastructure & Cloud Operations Leader with 15+ years of experi
 
 ## Work Experience
 
-### VP – Infrastructure & Pre-Production Support | BlackRock
+### VP – Infrastructure, Cloud Operations & DevOps | BlackRock
 **Gurgaon • Feb 2015 – Present**
 
 *BlackRock Aladdin Platform | Global Financial Services | 800+ Team Members Globally*
-
 - Spearheaded SRE transformation for BlackRock Aladdin — driving 99.95%+ availability through SLO enforcement, error budget tracking, and blameless post-mortems across globally critical financial systems.
 - Led Azure cloud migration for 100+ application servers with zero downstream impact; decommissioned on-premise infrastructure ahead of schedule and within budget.
 - Designed AWX/Ansible automation workflows eliminating 40% of manual toil and reducing MTTR by 35%; built Grafana/Splunk/AppDynamics observability stacks cutting alert noise by 30%.
 - Served as Strategic Incident Commander for P1/P2 outages — led global bridges, stakeholder comms, RCA sessions, and IPR-driven problem elimination to prevent recurrence.
 - Pioneered Microsoft 365 Copilot adoption across ops workflows — AI-assisted RCA authoring, ServiceNow ticket triage, Teams communications, SQL query engineering, Ansible playbook development, and log/filesystem monitoring scripts — reducing documentation and scripting effort by ~40%.
 - Owned change & release governance for mission-critical deployments; established operational standards, runbooks, and on-call processes while mentoring and scaling a high-performing distributed team.
+- Integrated Docker and Kubernetes into cloud migration and automation workflows, enabling containerized deployments, streamlined CI/CD delivery, and scalable orchestration across mission-critical financial applications.
 
 ---
 
@@ -74,6 +74,8 @@ D.U, New Delhi
 - AWS Cloud Practitioner
 - ITIL V3 Foundation Certification
 - Splunk Fundamentals
+- Claude101
+- AI_Fluency_Framework _&_Foundations by Claude
 
 ---
 
